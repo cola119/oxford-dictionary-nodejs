@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dictionary class entries API 1`] = `
+Object {
+  "id": "hello",
+  "metadata": Object {
+    "operation": "retrieve",
+    "provider": "Oxford University Press",
+    "schema": "RetrieveEntry",
+  },
+  "results": Array [
+    Object {
+      "id": "hello",
+      "language": "en-gb",
+      "lexicalEntries": Array [
+        Object {
+          "entries": Array [
+            Object {
+              "etymologies": Array [
+                "early 19th century: variant of earlier hollo; related to holla",
+              ],
+              "pronunciations": Array [
+                Object {
+                  "audioFile": "https://audio.oxforddictionaries.com/en/mp3/hello_gb_1.mp3",
+                  "dialects": Array [
+                    "British English",
+                  ],
+                  "phoneticNotation": "IPA",
+                  "phoneticSpelling": "həˈləʊ",
+                },
+                Object {
+                  "dialects": Array [
+                    "British English",
+                  ],
+                  "phoneticNotation": "IPA",
+                  "phoneticSpelling": "hɛˈləʊ",
+                },
+              ],
+              "senses": Array [
+                Object {
+                  "definitions": Array [
+                    "used as a greeting or to begin a phone conversation",
+                  ],
+                  "examples": Array [
+                    Object {
+                      "text": "hello there, Katie!",
+                    },
+                  ],
+                  "id": "m_en_gbus0460730.012",
+                  "shortDefinitions": Array [
+                    "used as greeting",
+                  ],
+                  "subsenses": Array [
+                    Object {
+                      "definitions": Array [
+                        "used to express surprise",
+                      ],
+                      "examples": Array [
+                        Object {
+                          "text": "hello, what's all this then?",
+                        },
+                      ],
+                      "id": "m_en_gbus0460730.017",
+                      "regions": Array [
+                        Object {
+                          "id": "british",
+                          "text": "British",
+                        },
+                      ],
+                      "shortDefinitions": Array [
+                        "used to express surprise",
+                      ],
+                    },
+                    Object {
+                      "definitions": Array [
+                        "used as a cry to attract someone's attention",
+                      ],
+                      "examples": Array [
+                        Object {
+                          "text": "‘Hello below!’ he cried",
+                        },
+                      ],
+                      "id": "m_en_gbus0460730.018",
+                      "shortDefinitions": Array [
+                        "used attract attention",
+                      ],
+                    },
+                    Object {
+                      "definitions": Array [
+                        "used informally to express sarcasm or anger",
+                      ],
+                      "examples": Array [
+                        Object {
+                          "text": "Hello! Did you even get what the play was about?",
+                        },
+                      ],
+                      "id": "m_en_gbus0460730.019",
+                      "shortDefinitions": Array [
+                        "used informally to express sarcasm or anger",
+                      ],
+                    },
+                  ],
+                },
+              ],
+              "variantForms": Array [
+                Object {
+                  "text": "hallo",
+                },
+                Object {
+                  "text": "hullo",
+                },
+              ],
+            },
+          ],
+          "language": "en-gb",
+          "lexicalCategory": Object {
+            "id": "interjection",
+            "text": "Interjection",
+          },
+          "text": "hello",
+        },
+        Object {
+          "entries": Array [
+            Object {
+              "inflections": Array [
+                Object {
+                  "grammaticalFeatures": Array [
+                    Object {
+                      "id": "plural",
+                      "text": "Plural",
+                      "type": "Number",
+                    },
+                  ],
+                  "inflectedForm": "hellos",
+                },
+              ],
+              "pronunciations": Array [
+                Object {
+                  "audioFile": "https://audio.oxforddictionaries.com/en/mp3/hello_gb_1.mp3",
+                  "dialects": Array [
+                    "British English",
+                  ],
+                  "phoneticNotation": "IPA",
+                  "phoneticSpelling": "həˈləʊ",
+                },
+                Object {
+                  "dialects": Array [
+                    "British English",
+                  ],
+                  "phoneticNotation": "IPA",
+                  "phoneticSpelling": "hɛˈləʊ",
+                },
+              ],
+              "senses": Array [
+                Object {
+                  "definitions": Array [
+                    "an utterance of ‘hello’; a greeting",
+                  ],
+                  "examples": Array [
+                    Object {
+                      "text": "she was getting polite nods and hellos from people",
+                    },
+                  ],
+                  "id": "m_en_gbus0460730.025",
+                  "semanticClasses": Array [
+                    Object {
+                      "id": "greeting",
+                      "text": "Greeting",
+                    },
+                  ],
+                  "shortDefinitions": Array [
+                    "utterance of ‘hello’",
+                  ],
+                  "synonyms": Array [
+                    Object {
+                      "language": "en",
+                      "text": "greeting",
+                    },
+                    Object {
+                      "language": "en",
+                      "text": "welcome",
+                    },
+                    Object {
+                      "language": "en",
+                      "text": "salutation",
+                    },
+                    Object {
+                      "language": "en",
+                      "text": "saluting",
+                    },
+                    Object {
+                      "language": "en",
+                      "text": "hailing",
+                    },
+                    Object {
+                      "language": "en",
+                      "text": "address",
+                    },
+                    Object {
+                      "language": "en",
+                      "text": "hello",
+                    },
+                    Object {
+                      "language": "en",
+                      "text": "hallo",
+                    },
+                  ],
+                  "thesaurusLinks": Array [
+                    Object {
+                      "entry_id": "acknowledgement",
+                      "sense_id": "t_en_gb0000184.002",
+                    },
+                  ],
+                },
+              ],
+              "variantForms": Array [
+                Object {
+                  "text": "hallo",
+                },
+                Object {
+                  "text": "hullo",
+                },
+              ],
+            },
+          ],
+          "language": "en-gb",
+          "lexicalCategory": Object {
+            "id": "noun",
+            "text": "Noun",
+          },
+          "text": "hello",
+        },
+        Object {
+          "entries": Array [
+            Object {
+              "grammaticalFeatures": Array [
+                Object {
+                  "id": "intransitive",
+                  "text": "Intransitive",
+                  "type": "Subcategorization",
+                },
+              ],
+              "inflections": Array [
+                Object {
+                  "grammaticalFeatures": Array [
+                    Object {
+                      "id": "intransitive",
+                      "text": "Intransitive",
+                      "type": "Subcategorization",
+                    },
+                  ],
+                  "inflectedForm": "helloes",
+                },
+                Object {
+                  "grammaticalFeatures": Array [
+                    Object {
+                      "id": "intransitive",
+                      "text": "Intransitive",
+                      "type": "Subcategorization",
+                    },
+                  ],
+                  "inflectedForm": "helloing",
+                },
+                Object {
+                  "grammaticalFeatures": Array [
+                    Object {
+                      "id": "intransitive",
+                      "text": "Intransitive",
+                      "type": "Subcategorization",
+                    },
+                  ],
+                  "inflectedForm": "helloed",
+                },
+              ],
+              "pronunciations": Array [
+                Object {
+                  "audioFile": "https://audio.oxforddictionaries.com/en/mp3/hello_gb_1.mp3",
+                  "dialects": Array [
+                    "British English",
+                  ],
+                  "phoneticNotation": "IPA",
+                  "phoneticSpelling": "həˈləʊ",
+                },
+                Object {
+                  "dialects": Array [
+                    "British English",
+                  ],
+                  "phoneticNotation": "IPA",
+                  "phoneticSpelling": "hɛˈləʊ",
+                },
+              ],
+              "senses": Array [
+                Object {
+                  "definitions": Array [
+                    "say or shout ‘hello’",
+                  ],
+                  "examples": Array [
+                    Object {
+                      "text": "I pressed the phone button and helloed",
+                    },
+                  ],
+                  "id": "m_en_gbus0460730.034",
+                  "shortDefinitions": Array [
+                    "say or shout ‘hello’",
+                  ],
+                },
+              ],
+              "variantForms": Array [
+                Object {
+                  "text": "hallo",
+                },
+                Object {
+                  "text": "hullo",
+                },
+              ],
+            },
+          ],
+          "language": "en-gb",
+          "lexicalCategory": Object {
+            "id": "verb",
+            "text": "Verb",
+          },
+          "text": "hello",
+        },
+      ],
+      "type": "headword",
+      "word": "hello",
+    },
+  ],
+  "word": "hello",
+}
+`;

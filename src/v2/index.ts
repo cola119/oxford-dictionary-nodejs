@@ -1,10 +1,5 @@
 import * as https from "https";
 
-type DictionaryConfig = {
-  appId: string;
-  appKey: string;
-};
-
 const v2 = "/api/v2";
 
 export class Dictionary {
@@ -26,8 +21,7 @@ export class Dictionary {
     return this.request(path);
   }
 
-  private request(path: string): Promise<string> {
-    console.log(path);
+  private request(path: string): Promise<GetEntriesReponse> {
     const options = {
       host: "od-api.oxforddictionaries.com",
       port: 443,
@@ -39,15 +33,15 @@ export class Dictionary {
       },
     };
 
-    return new Promise<string>((resolve, reject) => {
+    return new Promise<GetEntriesReponse>((resolve, reject) => {
       https.get(options, async (res) => {
         // TODO: error handling
-        console.log(res.statusCode);
         let body = "";
         for await (const data of res) {
           body += data;
         }
         const parsed = JSON.parse(body);
+        console.log(parsed);
         resolve(parsed);
       });
     });
