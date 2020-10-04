@@ -1,9 +1,9 @@
-type DictionaryConfig = {
+export type DictionaryConfig = {
   appId: string;
   appKey: string;
 };
 
-type GetEntriesReponse<Word extends string = string> = {
+export type GetEntriesReponse<Word extends string = string> = {
   id: Word;
 
   /**

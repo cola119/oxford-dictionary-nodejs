@@ -1,4 +1,5 @@
 import * as https from "https";
+import { DictionaryConfig, GetEntriesReponse } from "./types";
 
 const v2 = "/api/v2";
 
