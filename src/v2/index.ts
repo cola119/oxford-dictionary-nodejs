@@ -5,7 +5,15 @@ const v2 = "/api/v2";
 export class Dictionary {
   constructor(private options: DictionaryConfig) {}
 
-  // GET /entries/{source_lang}/{word_id}
+  /**
+   * /api/v2/entries/{source_lang}/{word_id}:
+   *
+   * Use this to retrieve definitions, pronunciations, example sentences, grammatical information and word origins.
+   *
+   * @param wordId
+   * @param fields
+   * @param strictMatch
+   */
   entries(wordId: string, fields?: string[], strictMatch: boolean = true) {
     // source_lang
     // TODO testing
@@ -35,14 +43,18 @@ export class Dictionary {
 
     return new Promise<GetEntriesReponse>((resolve, reject) => {
       https.get(options, async (res) => {
-        // TODO: error handling
-        let body = "";
+        let _body = "";
         for await (const data of res) {
-          body += data;
+          _body += data;
         }
-        const parsed = JSON.parse(body);
-        console.log(parsed);
-        resolve(parsed);
+        const body = JSON.parse(_body);
+
+        if (res.statusCode !== 200) {
+          reject(body);
+          return;
+        }
+
+        resolve(body);
       });
     });
   }
