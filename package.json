@@ -1,25 +1,35 @@
 {
   "name": "oxford-dictionary-nodejs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "A modern tiny nodeJS wrapper for the oxforddictionary.com V2 REST API.",
+  "main": "dist/v2/index.js",
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "oxford",
+    "REST API",
+    "oxforddictionary",
+    "oxforddictionaries",
+    "Oxford Dictionaries"
+  ],
+  "author": "Kohei Ueno",
   "license": "MIT",
+  "repository": "git@github.com:cola119/oxford-dictionary-nodejs.git",
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "@types/node": "^14.11.2",
+    "dotenv": "^8.2.0",
     "jest": "^26.4.2",
     "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
   },
-  "dependencies": {
-    "dotenv": "^8.2.0"
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
