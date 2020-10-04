@@ -1,6 +1,6 @@
 {
   "name": "oxford-dictionary-nodejs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A modern tiny nodeJS wrapper for the oxforddictionary.com V2 REST API.",
   "main": "dist/v2/index.js",
   "scripts": {
