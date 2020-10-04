@@ -2,6 +2,16 @@ import * as https from "https";
 
 const v2 = "/api/v2";
 
+type APIOption = {
+  fields?: string[];
+  strictMatch?: boolean;
+};
+
+const defaultOptions: APIOption = {
+  fields: undefined,
+  strictMatch: false,
+};
+
 export class Dictionary {
   constructor(private options: DictionaryConfig) {}
 
@@ -11,21 +21,10 @@ export class Dictionary {
    * Use this to retrieve definitions, pronunciations, example sentences, grammatical information and word origins.
    *
    * @param wordId
-   * @param fields
-   * @param strictMatch
+   * @param options
    */
-  entries(wordId: string, fields?: string[], strictMatch: boolean = true) {
-    // source_lang
-    // TODO testing
-    let path = `${v2}/entries/en-gb/${wordId}`;
-    let conjection: "?" | "&" = "?";
-    if (fields) {
-      const fields_q = separateWithComma(fields);
-      path += `${conjection}fields=${fields_q}`;
-      conjection = "&";
-    }
-    const strictMatch_q = strictMatch ? "true" : "false";
-    path += `${conjection}strictMatch=${strictMatch_q}`;
+  entries(wordId: string, opt?: APIOption): Promise<GetEntriesReponse> {
+    const path = generatePath(wordId, opt);
     return this.request(path);
   }
 
@@ -49,9 +48,9 @@ export class Dictionary {
         }
         const body = JSON.parse(_body);
 
-        if (res.statusCode !== 200) {
-          reject(body);
-          return;
+        const isErrorHappend = !!body.error || res.statusCode !== 200;
+        if (isErrorHappend) {
+          reject(new Error(body.error ?? "Something error happend"));
         }
 
         resolve(body);
@@ -59,6 +58,24 @@ export class Dictionary {
     });
   }
 }
+
+export const generatePath = (
+  wordId: string,
+  { fields, strictMatch }: APIOption = defaultOptions
+) => {
+  // source_lang
+  let path = `${v2}/entries/en-gb/${wordId}`;
+  let conjection: "?" | "&" = "?";
+  if (fields && fields.length > 0) {
+    const fields_q = separateWithComma(fields);
+    path += `${conjection}fields=${fields_q}`;
+    conjection = "&";
+  }
+  const strictMatch_q = strictMatch ? "true" : "false";
+  path += `${conjection}strictMatch=${strictMatch_q}`;
+
+  return path;
+};
 
 const separateWithComma = (tokens: string[]): string =>
   tokens.reduce(
