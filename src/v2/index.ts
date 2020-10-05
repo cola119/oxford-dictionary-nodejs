@@ -3,8 +3,18 @@ import { DictionaryConfig, GetEntriesReponse } from "./types";
 
 const v2 = "/api/v2";
 
+type Filelds =
+  | "definitions"
+  | "domains"
+  | "etymologies"
+  | "examples"
+  | "pronunciations"
+  | "regions"
+  | "registers"
+  | "variantForms";
+
 type APIOption = {
-  fields?: string[];
+  fields?: Filelds[];
   strictMatch?: boolean;
 };
 
@@ -75,11 +85,11 @@ export const generatePath = (
   const strictMatch_q = strictMatch ? "true" : "false";
   path += `${conjection}strictMatch=${strictMatch_q}`;
 
-  return path;
+  return encodeURI(path);
 };
 
 const separateWithComma = (tokens: string[]): string =>
   tokens.reduce(
-    (prev, token) => (prev === "" ? token : `${prev}%2C${token}`),
+    (prev, token) => (prev === "" ? token : `${prev},${token}`),
     ""
   );

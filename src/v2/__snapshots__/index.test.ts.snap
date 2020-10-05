@@ -330,3 +330,156 @@ Object {
   "word": "hello",
 }
 `;
+
+exports[`Dictionary class entries API 2 1`] = `
+Object {
+  "id": "hello",
+  "metadata": Object {
+    "operation": "retrieve",
+    "provider": "Oxford University Press",
+    "schema": "RetrieveEntry",
+  },
+  "results": Array [
+    Object {
+      "id": "hello",
+      "language": "en-gb",
+      "lexicalEntries": Array [
+        Object {
+          "entries": Array [
+            Object {
+              "pronunciations": Array [
+                Object {
+                  "audioFile": "https://audio.oxforddictionaries.com/en/mp3/hello_gb_1.mp3",
+                  "dialects": Array [
+                    "British English",
+                  ],
+                  "phoneticNotation": "IPA",
+                  "phoneticSpelling": "həˈləʊ",
+                },
+                Object {
+                  "dialects": Array [
+                    "British English",
+                  ],
+                  "phoneticNotation": "IPA",
+                  "phoneticSpelling": "hɛˈləʊ",
+                },
+              ],
+              "senses": Array [
+                Object {
+                  "definitions": Array [
+                    "used as a greeting or to begin a phone conversation",
+                  ],
+                  "id": "m_en_gbus0460730.012",
+                  "subsenses": Array [
+                    Object {
+                      "definitions": Array [
+                        "used to express surprise",
+                      ],
+                      "id": "m_en_gbus0460730.017",
+                    },
+                    Object {
+                      "definitions": Array [
+                        "used as a cry to attract someone's attention",
+                      ],
+                      "id": "m_en_gbus0460730.018",
+                    },
+                    Object {
+                      "definitions": Array [
+                        "used informally to express sarcasm or anger",
+                      ],
+                      "id": "m_en_gbus0460730.019",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          "language": "en-gb",
+          "lexicalCategory": Object {
+            "id": "interjection",
+            "text": "Interjection",
+          },
+          "text": "hello",
+        },
+        Object {
+          "entries": Array [
+            Object {
+              "pronunciations": Array [
+                Object {
+                  "audioFile": "https://audio.oxforddictionaries.com/en/mp3/hello_gb_1.mp3",
+                  "dialects": Array [
+                    "British English",
+                  ],
+                  "phoneticNotation": "IPA",
+                  "phoneticSpelling": "həˈləʊ",
+                },
+                Object {
+                  "dialects": Array [
+                    "British English",
+                  ],
+                  "phoneticNotation": "IPA",
+                  "phoneticSpelling": "hɛˈləʊ",
+                },
+              ],
+              "senses": Array [
+                Object {
+                  "definitions": Array [
+                    "an utterance of ‘hello’; a greeting",
+                  ],
+                  "id": "m_en_gbus0460730.025",
+                },
+              ],
+            },
+          ],
+          "language": "en-gb",
+          "lexicalCategory": Object {
+            "id": "noun",
+            "text": "Noun",
+          },
+          "text": "hello",
+        },
+        Object {
+          "entries": Array [
+            Object {
+              "pronunciations": Array [
+                Object {
+                  "audioFile": "https://audio.oxforddictionaries.com/en/mp3/hello_gb_1.mp3",
+                  "dialects": Array [
+                    "British English",
+                  ],
+                  "phoneticNotation": "IPA",
+                  "phoneticSpelling": "həˈləʊ",
+                },
+                Object {
+                  "dialects": Array [
+                    "British English",
+                  ],
+                  "phoneticNotation": "IPA",
+                  "phoneticSpelling": "hɛˈləʊ",
+                },
+              ],
+              "senses": Array [
+                Object {
+                  "definitions": Array [
+                    "say or shout ‘hello’",
+                  ],
+                  "id": "m_en_gbus0460730.034",
+                },
+              ],
+            },
+          ],
+          "language": "en-gb",
+          "lexicalCategory": Object {
+            "id": "verb",
+            "text": "Verb",
+          },
+          "text": "hello",
+        },
+      ],
+      "type": "headword",
+      "word": "hello",
+    },
+  ],
+  "word": "hello",
+}
+`;
